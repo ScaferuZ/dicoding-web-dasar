@@ -1,0 +1,62 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --color-main: #03363d;
+  --color-secondary: #174d4d;
+}
+
+/* NAVBAR */
+.navbar {
+  height: 50px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-main);
+}
+
+.navbar__wrapper {
+  padding: 0 166px;
+  margin: 0;
+  line-height: 50px;
+}
+/* navLeft */
+.navbar__left {
+  float: left;
+  text-transform: uppercase;
+}
+
+.navbar__left > h1 {
+  font-weigth: bold;
+  font-size: 24px;
+  font-style: normal;
+}
+/* navRight */
+.navbar__right {
+  text-align: right;
+}
+
+.navbar__right > ul > li {
+  display: inline-block;
+  --tw-space-x-reverse: 0;
+  margin-right: calc(4rem * var(--tw-space-x-reverse));
+  margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.navbar__right > ul > li > a {
+  font-style: normal;
+  font-size: 16px;
+  color: var(--color-main);
+}
+
+.btn {
+  background-color: var(--color-secondary);
+  padding: 5px 15px;
+  color: white !important;
+}
