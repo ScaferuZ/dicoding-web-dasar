@@ -97,7 +97,6 @@ header {
 }
 
 .small__jumbotron {
-  width: 69rem;
   height: 18.75rem;
   background-color: white;
   margin: 13.125rem 10rem;
@@ -109,4 +108,45 @@ header {
   color: var(--color-main);
   weigth: 600;
   line-height: 18.75rem;
+}
+
+/* HEADER END */
+
+/* MAIN START */
+.card {
+  margin: 0 10rem;
+  height: 43.75rem;
+}
+
+/* Projects */
+
+.project {
+  margin-top: 15rem;
+}
+
+.project > article > h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-main);
+  text-decoration: underline;
+}
+
+.project > article > section {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3rem;
+  justify-items: center;
+}
+
+.project img {
+  width: 21rem;
+  height: 14 rem;
+}
+
+.project p {
+  max-width: 21rem;
+  margin-top: 3.125rem;
+  color: var(--color-secondary);
+  font-size: 1.25rem;
 }
