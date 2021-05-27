@@ -114,34 +114,52 @@ header {
 
 /* MAIN START */
 .card {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   margin: 0 10rem;
+  padding: 7.5rem 0;
   height: 43.75rem;
+  border-bottom: 2px solid var(--color-secondary);
 }
 
-/* Projects */
-
-.project {
-  margin-top: 15rem;
-}
-
-.project > article > h2 {
+.project > article > h2,
+.testimony h2 {
   font-size: 2rem;
   text-align: center;
   color: var(--color-main);
   text-decoration: underline;
 }
+/* Projects */
 
-.project > article > section {
+.project {
+  margin-top: 10rem;
+  height: 70.313rem;
+}
+
+.project__wrapper {
   margin-top: 5rem;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 3rem;
-  justify-items: center;
+  align-content: space-evenly;
+}
+
+.project__left {
+  justify-self: start;
+}
+
+.project__mid {
+  justify-self: center;
+}
+
+.project__right {
+  justify-self: end;
 }
 
 .project img {
   width: 21rem;
-  height: 14 rem;
+  height: 14rem;
 }
 
 .project p {
@@ -149,4 +167,43 @@ header {
   margin-top: 3.125rem;
   color: var(--color-secondary);
   font-size: 1.25rem;
+}
+
+/* Testimony */
+
+.testimony {
+  margin: auto;
+}
+
+.testimony___wrapper {
+  display: flex;
+  margin: 0 10rem;
+  margin-top: 5rem;
+  justify-content: flex-end;
+}
+
+.testimony__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-right: 1.5rem;
+  color: var(--color-secondary);
+}
+
+.testimony__wrapper > p {
+  font-size: 3rem;
+}
+
+.testimony__wrapper > h3 {
+  font-weigth: 500;
+  font-size: 2.25rem;
+}
+
+.testimony__wrapper > h4 {
+  font-weigth: 200;
+  font-size: 1.5rem;
+}
+
+.testimony__wrapper > h5 {
+  font-size: 1.125rem;
 }
