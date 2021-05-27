@@ -19,9 +19,16 @@ body {
 }
 
 /* button */
+button {
+  -webkit-appereance: button;
+  all: unset
+}
+
 .btn {
+  font-family: "Poppins", sans-serif;
   background-color: var(--color-secondary);
-  color: white !important;
+  cursor: pointer;
+  color: white !important;'
 }
 
 /* HEADER START */
@@ -113,6 +120,10 @@ header {
 /* HEADER END */
 
 /* MAIN START */
+main {
+  overflow: auto;
+}
+
 .card {
   /* display: flex;
   justify-content: center;
@@ -172,12 +183,11 @@ header {
 /* Testimony */
 
 .testimony {
-  margin: auto;
+  margin: ;
 }
 
 .testimony___wrapper {
   display: flex;
-  margin: 0 10rem;
   margin-top: 5rem;
   justify-content: flex-end;
 }
@@ -191,7 +201,7 @@ header {
 }
 
 .testimony__wrapper > p {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .testimony__wrapper > h3 {
@@ -206,4 +216,41 @@ header {
 
 .testimony__wrapper > h5 {
   font-size: 1.125rem;
+}
+
+.testimony__wrapper > span {
+  justify-self: start;
+}
+
+/* About */
+
+.about {
+  float: left;
+  width: 60%;
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14.688rem 0;
+}
+
+.about h2 {
+  font-size: 3.5rem;
+}
+
+.about a {
+  font-size: 2.25rem;
+  color: var(--color-secondary);
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3.125rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3.125rem * var(--tw-space-y-reverse));
+}
+
+.about__wrapper > .btn {
+  margin-top: 3.125rem;
+  font-size: 2.25rem;
+  padding: 1rem 3rem;
 }
