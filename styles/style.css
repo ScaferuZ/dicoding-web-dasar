@@ -21,14 +21,15 @@ body {
 /* button */
 button {
   -webkit-appereance: button;
-  all: unset
+  all: unset;
+  cursor: pointer;
 }
 
 .btn {
   font-family: "Poppins", sans-serif;
   background-color: var(--color-secondary);
   cursor: pointer;
-  color: white !important;'
+  color: white !important;
 }
 
 /* HEADER START */
@@ -224,7 +225,7 @@ main {
 
 /* About */
 
-.about {
+.about__left {
   float: left;
   width: 60%;
 }
@@ -253,4 +254,52 @@ main {
   margin-top: 3.125rem;
   font-size: 2.25rem;
   padding: 1rem 3rem;
+}
+
+.about__right {
+  float: right;
+  width: 40%;
+}
+
+.about__rightWrapper > img {
+  width: 100%;
+}
+
+.personalInfo {
+  margin-top: 0;
+}
+
+.personalInfo > h5 {
+  padding-top: 1.875rem;
+  font-size: 1.5rem;
+}
+
+.personalInfo > p {
+  padding-top: 1.875rem;
+  font-size: 1.125rem;
+  padding-bottom: 7.75rem;
+}
+
+/* MAIN END */
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-main);
+  height: 6.25rem;
+}
+
+footer > p {
+  font-size: 1.125rem;
+  color: #fff4e0;
+  opacity: 0.8;
+}
+
+footer > p > a {
+  text-decoration: none;
+  color: #fff4e0;
+  cursor: pointer;
 }
