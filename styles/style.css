@@ -8,6 +8,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -135,8 +139,7 @@ main {
   border-bottom: 2px solid var(--color-secondary);
 }
 
-.project > article > h2,
-.testimony h2 {
+.project > article > h2 {
   font-size: 2rem;
   text-align: center;
   color: var(--color-main);
@@ -181,49 +184,11 @@ main {
   font-size: 1.25rem;
 }
 
-/* Testimony */
-
-.testimony {
-  margin: ;
-}
-
-.testimony___wrapper {
-  display: flex;
-  margin-top: 5rem;
-  justify-content: flex-end;
-}
-
-.testimony__wrapper {
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-  margin-right: 1.5rem;
-  color: var(--color-secondary);
-}
-
-.testimony__wrapper > p {
-  font-size: 4rem;
-}
-
-.testimony__wrapper > h3 {
-  font-weigth: 500;
-  font-size: 2.25rem;
-}
-
-.testimony__wrapper > h4 {
-  font-weigth: 200;
-  font-size: 1.5rem;
-}
-
-.testimony__wrapper > h5 {
-  font-size: 1.125rem;
-}
-
-.testimony__wrapper > span {
-  justify-self: start;
-}
-
 /* About */
+
+.about {
+  margin-top: 10rem;
+}
 
 .about__left {
   float: left;
@@ -302,4 +267,25 @@ footer > p > a {
   text-decoration: none;
   color: #fff4e0;
   cursor: pointer;
+}
+
+/* back to the top button */
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--color-secondary);
+  cursor: pointer;
+  padding: 10px;
+}
+
+#topBtn > img {
+  width: 24px;
+  height: 24px;
+  color: white;
 }
