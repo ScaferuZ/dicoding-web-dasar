@@ -55,17 +55,23 @@ header {
 }
 
 /* NAVBAR */
-.navbar {
+nav {
+  position: fixed;
   overflow: hidden;
   height: 3.125 rem;
   width: 100%;
   color: var(--color-main);
+  background: white;
 }
 
 .navbar__wrapper {
   padding: 0 10rem;
   margin: 0;
   line-height: 3.125rem;
+}
+
+nav.active {
+  background-color: yellow;
 }
 /* navLeft */
 .navbar__left {
@@ -77,6 +83,7 @@ header {
   font-weigth: bold;
   font-size: 1.5rem;
   font-style: normal;
+  line-height: 4.125rem;
 }
 /* navRight */
 .navbar__right {
@@ -100,9 +107,13 @@ header {
   padding: 5px 15px;
 }
 
+/* status bar */
+
 /* jumbotron */
 
 .jumbotron {
+  margin-top: 0 !important;
+  padding-top: 13.125rem;
   margin: 13.125rem 10rem;
   text-align: center;
 }
@@ -259,7 +270,7 @@ footer > p {
 }
 
 footer > p > a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #fff4e0;
   cursor: pointer;
 }
@@ -379,5 +390,30 @@ footer > p > a {
 
   .about {
     margin-top: 5rem;
+  }
+
+  /* Footer */
+
+  footer {
+    height: 4rem;
+    padding: 0 2rem;
+  }
+
+  footer > p {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  /* back to the top button */
+
+  #topBtn {
+    widht: 0.75rem;
+    height: 0.75rem;
+    bottom: 70px;
+  }
+
+  #topBtn > img {
+    width: 18px;
+    height: 18px;
   }
 }

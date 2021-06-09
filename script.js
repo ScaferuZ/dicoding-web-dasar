@@ -1,3 +1,15 @@
+// Change nav color after scroll
+const navbar = document.querySelector(".nav");
+
+window.onscroll = function () {
+  var top = window.scrollY;
+  console.log("budi");
+  if (top >= 100) {
+    navbar.classList.add("active");
+  } else {
+    navbar.classList.remove("active");
+  }
+};
 // Back to the top button
 
 myButton = document.getElementById("topBtn");
