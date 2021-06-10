@@ -1,22 +1,38 @@
-// Change nav color after scroll
-const navbar = document.querySelector(".nav");
+// onscroll
 
 window.onscroll = function () {
-  var top = window.scrollY;
-  console.log("budi");
+  scrollFunction();
+  scrollBar();
+  navColor();
+};
+
+// Change color navbar
+
+const navbar = document.querySelector(".nav");
+
+function navColor() {
+  let top = window.scrollY;
   if (top >= 100) {
     navbar.classList.add("active");
   } else {
     navbar.classList.remove("active");
   }
-};
+}
+
+// Progress bar
+
+function scrollBar() {
+  let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  let height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrolled = (winScroll / height) * 100;
+  document.getElementById("scrollBar").style.width = scrolled + "%";
+}
+
 // Back to the top button
 
 myButton = document.getElementById("topBtn");
-
-window.onscroll = function () {
-  scrollFunction();
-};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

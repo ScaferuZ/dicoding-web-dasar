@@ -57,11 +57,18 @@ header {
 /* NAVBAR */
 nav {
   position: fixed;
-  overflow: hidden;
-  height: 3.125 rem;
+  height: 3.75rem;
   width: 100%;
   color: var(--color-main);
+  z-index: 1;
+  top: 0;
+  transition: all 0.5s;
+}
+
+nav.active {
+  position: fixed;
   background: white;
+  transition: all 0.5s;
 }
 
 .navbar__wrapper {
@@ -70,9 +77,6 @@ nav {
   line-height: 3.125rem;
 }
 
-nav.active {
-  background-color: yellow;
-}
 /* navLeft */
 .navbar__left {
   float: left;
@@ -83,7 +87,7 @@ nav.active {
   font-weigth: bold;
   font-size: 1.5rem;
   font-style: normal;
-  line-height: 4.125rem;
+  line-height: 3.75rem;
 }
 /* navRight */
 .navbar__right {
@@ -105,6 +109,12 @@ nav.active {
 
 .contact {
   padding: 5px 15px;
+}
+
+.progress__bar {
+  height: 0.125rem;
+  background-color: var(--color-main);
+  width: 0%;
 }
 
 /* status bar */
@@ -308,12 +318,17 @@ footer > p > a {
   }
 
   /* NAVBAR */
+  nav {
+    height: 3.125rem;
+  }
+
   .navbar__wrapper {
     padding: 0 2rem;
   }
 
   .navbar__left h1 {
     font-size: 1.125rem;
+    line-height: 3.125rem;
   }
 
   #contactUs {
